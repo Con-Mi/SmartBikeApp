@@ -1,0 +1,63 @@
+{
+  "_from": "cordova-android-toast",
+  "_id": "cordova-android-toast@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-0VttqD1YLZkbfKEFCBfewx7fUwKi13VdZ/KV1rHNDJ/EimBWgWHR3u+G2fDchQTwqqyOYfF5/A11rNdKs3U9jQ==",
+  "_location": "/cordova-android-toast",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-android-toast",
+    "name": "cordova-android-toast",
+    "escapedName": "cordova-android-toast",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-android-toast/-/cordova-android-toast-1.0.0.tgz",
+  "_shasum": "51e167d0c50f3c96c4c1553182bda3f6887521a3",
+  "_spec": "cordova-android-toast",
+  "_where": "C:\\Users\\tirth\\Documents\\Cybercom\\SmartBikeApp",
+  "author": {
+    "name": "Nikola Brežnjak",
+    "email": "nikola.breznjak@gmail.com",
+    "url": "http://www.nikola-breznjak.com/blog"
+  },
+  "bugs": {
+    "url": "https://github.com/Hitman666/cordova-android-toast/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-android-toast",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Android Toast Plugin",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/Hitman666/cordova-android-toast#readme",
+  "keywords": [
+    "android",
+    "toast",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-android-toast",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hitman666/cordova-android-toast.git"
+  },
+  "version": "1.0.0"
+}

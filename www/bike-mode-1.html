@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .col-3, .col-6, .col-2 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="col-3">
+          <div class="row">
+            <div class="card mb-2 col-6 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-2 col-6 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card mb-2 col-6 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-2 col-6 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-2 col-6 box-shadow">
+          <div id="map" class="card-body">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card mb-2 col-3 box-shadow">
+              <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/aws-iot-sdk-browser-bundle.js"></script>
+    <script type="text/javascript" src="js/bundle.js"></script>
+    <script type="text/javascript" src="js/aws-sdk.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+      document.addEventListener("deviceready", onDeviceReady, false);
+      var androidToast;
+
+      function onDeviceReady() {
+        androidToast = new AndroidToast();
+      }
+
+      function initMap() {
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: {lat: 41.85, lng: -87.65}
+        });
+        directionsDisplay.setMap(map);
+
+        calculateAndDisplayRoute(directionsService, directionsDisplay);
+      }
+
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        directionsService.route({
+          origin: "chicago, il",
+          destination: "st louis, mo",
+          travelMode: 'BICYCLING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+
+      var currentlySubscribedTopic = 'pi/#';
+      var messageHistory = '';
+      var clientId = 'mqtt-explorer-' + (Math.floor((Math.random() * 100000) + 1));
+
+      var AWS = require('aws-sdk');
+      var AWSIoTData = require('aws-iot-device-sdk');
+      AWS.config.host = 'a2xzgqat4h4es4.iot.us-east-1.amazonaws.com';
+      AWS.config.region = 'eu-west-1'; // Region
+      AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+          IdentityPoolId: 'eu-west-1:548377b9-c4d7-474a-b6fb-7d5d05780b0e',
+      });
+
+      const mqttClient = AWSIoTData.device({
+         //
+         // Set the AWS region we will operate in.
+         //
+         region: AWS.config.region,
+         host: AWS.config.host,
+         clientId: clientId,
+
+         protocol: 'wss',
+
+         maximumReconnectTimeMs: 8000,
+
+         debug: true,
+
+         accessKeyId: '',
+         secretKey: '',
+         sessionToken: ''
+      });
+      //
+      // var cognitoIdentity = new AWS.CognitoIdentity();
+      // AWS.config.credentials.get(function(err, data) {
+      //    if (!err) {
+      //       console.log('retrieved identity: ' + AWS.config.credentials.identityId);
+      //       var params = {
+      //          IdentityId: AWS.config.credentials.identityId
+      //       };
+      //       cognitoIdentity.getCredentialsForIdentity(params, function(err, data) {
+      //          if (!err) {
+      //             //
+      //             // Update our latest AWS credentials; the MQTT client will use these
+      //             // during its next reconnect attempt.
+      //             //
+      //             mqttClient.updateWebSocketCredentials(data.Credentials.AccessKeyId,
+      //                data.Credentials.SecretKey,
+      //                data.Credentials.SessionToken);
+      //          } else {
+      //             console.log('error retrieving credentials: ' + err);
+      //             alert('error retrieving credentials: ' + err);
+      //          }
+      //       });
+      //    } else {
+      //       console.log('error retrieving identity:' + err);
+      //       alert('error retrieving identity: ' + err);
+      //    }
+      // });
+      //
+      // //
+      // // Connect handler; update div visibility and fetch latest shadow documents.
+      // // Subscribe to lifecycle events on the first connect event.
+      // //
+      // window.mqttClientConnectHandler = function() {
+      //    alert('connect');
+      //    // document.getElementById("connecting-div").style.visibility = 'hidden';
+      //    // document.getElementById("explorer-div").style.visibility = 'visible';
+      //    // document.getElementById('subscribe-div').innerHTML = '<p><br></p>';
+      //    messageHistory = '';
+      //
+      //    //
+      //    // Subscribe to our current topic.
+      //    //
+      //    mqttClient.subscribe(currentlySubscribedTopic);
+      // };
+      //
+      // window.mqttClientReconnectHandler = function() {
+      //    alert('reconnect');
+      //
+      // window.isUndefined = function(value) {
+      //    return typeof value === 'undefined' || typeof value === null;
+      // };
+      //
+      // window.mqttClientMessageHandler = function(topic, payload) {
+      //    console.log('message: ' + topic + ':' + payload.toString());
+      //    messageHistory = messageHistory + topic + ':' + payload.toString() + '</br>';
+      //    // document.getElementById('subscribe-div').innerHTML = '<p>' + messageHistory + '</p>';
+      // };
+      //
+      // mqttClient.on('connect', window.mqttClientConnectHandler);
+      // mqttClient.on('reconnect', window.mqttClientReconnectHandler);
+      // mqttClient.on('message', window.mqttClientMessageHandler);
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5aZ-KM67zM44jlZm4ERX67hYH89ul5Rs&callback=initMap"></script>
+</body>
+</html>

@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Material form login -->
     <div class="container">
-    <form>
-        <p class="h4 text-center mb-4">Where would you like to go?</p>
+      <div class="row align-items-center">
+        <div class="col-4 offset-4">
+          <form action="bike-mode-1.html" id="form-destination" class="text-center">
+              <h4 class="mb-4">Where would you like to go?</h4>
 
-        <!-- Material input destination -->
-        <div class="md-form">
-            <input type="text" id="materialFormLoginEmailEx" class="form-control">
-            <label for="materialFormLoginEmailEx">Your destination</label>
-        </div>
+              <div class="md-form">
+                  <input type="text" id="destination" class="form-control" required>
+                  <label for="destination">Your destination</label>
+              </div>
 
-        <div class="text-center mt-4">
-            <button class="btn btn-default" type="submit">Go<img src="_ionicons_svg_md-bicycle.svg" alt="Kiwi standing on oval"></button>
+              <div class="text-center mt-4">
+                  <button class="btn btn-default d-inline" type="submit"><object data="media/md-bicycle.svg" type="image/svg+xml" class="inline"></object></button>
+              </div>
+          </form>
         </div>
-    </form>
+      </div>
     </div>
-    <!-- Material form login -->
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
+    <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-</body>
+    <script>
+      document.addEventListener("deviceready", onDeviceReady, false);
+      var geolocationOptions = {enableHighAccuracy: true};
+      var androidToast;
 
+      function onDeviceReady() {
+        navigator.geolocation.getCurrentPosition(geolocationSuccess,
+                                                 geolocationError,
+                                                 geolocationOptions);
+
+        androidToast = new AndroidToast();
+      }
+      var geolocationSuccess = function(position) {
+        androidToast.show('Latitude: '          + position.coords.latitude          +
+              'Longitude: '         + position.coords.longitude         +
+              'Altitude: '          + position.coords.altitude          +
+              'Accuracy: '          + position.coords.accuracy          +
+              'Altitude Accuracy: ' + position.coords.altitudeAccuracy  +
+              'Heading: '           + position.coords.heading           +
+              'Speed: '             + position.coords.speed             +
+              'Timestamp: '         + position.timestamp                );
+      }
+      var geolocationError = function(error) {
+          androidToast.show('Failed to detect location!');
+      }
+    </script>
+</body>
 </html>

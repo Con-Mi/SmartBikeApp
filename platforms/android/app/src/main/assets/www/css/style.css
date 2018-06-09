@@ -1,60 +1,22 @@
-html, body {
-    position: relative;
-    min-width: 900px;
-    min-height: 768px;
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    display: table-cell;
-    vertical-align: middle;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
+  background-color: #f5f5f5;
 }
 
 .md-form input[type=text] {
-		text-align:center;
- 		webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    outline: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: none;
-    border-bottom: 1px solid #ced4da;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    background-color: transparent;
-}
-
-.md-form label {
-		text-align:center;
-}
-
-.md-form label.active {
-		text-align:center;
+	text-align:left;
 }
 
 .btn-default {
-    background-color: #2bbbad!important;
-    color: #fff!important;
-}
-
-.text-center {
-    text-align: center!important;
-}
-
-.btn-default {
-    background-color: #2bbbad!important;
-    color: #fff!important;
-    width: 100px;
-    height: 70px;
-}
-
-.h4, h4 {
-    font-size: 2.5rem;
-    color: 29526d;
+    width: 6rem;
 }
