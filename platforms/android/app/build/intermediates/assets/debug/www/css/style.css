@@ -14,9 +14,9 @@ body {
 }
 
 .md-form input[type=text] {
-	text-align:left;
+  text-align:left;
 }
 
 .btn-default {
-    width: 6rem;
+  width: 6rem;
 }

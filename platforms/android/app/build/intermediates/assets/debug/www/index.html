@@ -12,8 +12,8 @@
 <body>
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-4 offset-4">
-          <form action="bike-mode-1.html" id="form-destination" class="text-center">
+        <div class="col-5 offset-3">
+          <form action="bike-mode-0.html" id="form-destination" class="text-center">
               <h4 class="mb-4">Where would you like to go?</h4>
 
               <div class="md-form">
@@ -54,10 +54,10 @@
               'Altitude Accuracy: ' + position.coords.altitudeAccuracy  +
               'Heading: '           + position.coords.heading           +
               'Speed: '             + position.coords.speed             +
-              'Timestamp: '         + position.timestamp                );
+              'Timestamp: '         + position.timestamp                , function(){}, function(){});
       }
       var geolocationError = function(error) {
-          androidToast.show('Failed to detect location!');
+          androidToast.show('Failed to detect location!', function(){}, function(){});
       }
     </script>
 </body>

@@ -1,0 +1,71 @@
+.btn-default {
+    background-color: #2bbbad!important;
+    color: #fff!important;
+}
+
+.btn-default {
+    background-color: #2bbbad!important;
+    color: #fff!important;
+    width: 100px;
+    height: 70px;
+}
+
+.btn-default {
+    background-color: #f9ccac!important;
+    color: #fff!important;
+    opacity: 0.99;
+    width: 500px;
+    height: 150px;
+}
+
+#location_button {
+     width: 500px;
+     height: 150px;
+     color: black;
+     font-size: 1.3em;
+     font-family: tahoma;
+     margin-top: 1px;
+     position:absolute;
+     bottom:0;
+     top:80%;
+     left:20%;
+     vertical-align:bottom;
+ }
+
+#speed_button {
+     width: 200px;
+     height: 190;
+     color:black;
+     font-size: 1.2em;
+     font-family: tahoma;
+     margin-top: 1px;
+     margin-right: 2px;
+     position:absolute;
+     top:0;
+     left:0;
+ }
+
+#navigation {
+    border-radius: 50%;
+    border: 5px solid #f9ccac!important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#distance_img {
+    width: 12.5%;
+    top:60%;
+    left:45%;
+    position:absolute;
+}
+
+}
+
+#speed_img {
+    width: 40%;
+    top:50%;
+    left:30%;
+    position:absolute;
+}

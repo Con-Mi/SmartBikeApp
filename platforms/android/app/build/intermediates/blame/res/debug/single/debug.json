@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\tirth\\Documents\\Cybercom\\SmartBikeApp\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-ldpi_screen.png.flat",
-        "source": "C:\\Users\\tirth\\Documents\\Cybercom\\SmartBikeApp\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
-    },
-    {
         "merged": "C:\\home\\kourtinesble\\SmartBikeApp\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
         "source": "C:\\home\\kourtinesble\\SmartBikeApp\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "C:\\Users\\tirth\\Documents\\Cybercom\\SmartBikeApp\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-ldpi_screen.png.flat",
+        "source": "C:\\Users\\tirth\\Documents\\Cybercom\\SmartBikeApp\\platforms\\android\\app\\src\\main\\res\\drawable-land-ldpi\\screen.png"
     },
     {
         "merged": "C:\\home\\kourtinesble\\SmartBikeApp\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-ldpi_screen.png.flat",

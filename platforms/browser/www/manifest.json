@@ -8,5 +8,5 @@
   "author": "Apache Cordova Team",
   "icons": [],
   "orientation": "landscape",
-  "start_url": "index.html"
+  "start_url": "login.html"
 }

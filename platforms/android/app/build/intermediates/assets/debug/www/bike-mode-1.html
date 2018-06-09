@@ -9,6 +9,10 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <style>
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
       .col-3, .col-6, .col-2 {
         padding-left: 0;
         padding-right: 0;
@@ -58,91 +62,33 @@
         </div>
         <div class="col-3">
           <div class="row">
-            <div class="card mb-2 col-3 box-shadow">
+            <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
+                  <li>10 users included</li>
                 </ul>
               </div>
             </div>
-            <div class="card mb-2 col-3 box-shadow">
+            <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
+                  <li>10 users included</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="card mb-2 col-3 box-shadow">
+            <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
+                  <li>10 users included</li>
                 </ul>
               </div>
             </div>
-            <div class="card mb-2 col-3 box-shadow">
+            <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
+                  <li>10 users included</li>
                 </ul>
               </div>
             </div>
@@ -152,6 +98,9 @@
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/aws-iot-sdk-browser-bundle.js"></script>
+    <script type="text/javascript" src="js/bundle.js"></script>
+    <script type="text/javascript" src="js/aws-sdk.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -189,6 +138,9 @@
           }
         });
       }
+
+      var currentlySubscribedTopic = 'pi/#';
+
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5aZ-KM67zM44jlZm4ERX67hYH89ul5Rs&callback=initMap"></script>
 </body>

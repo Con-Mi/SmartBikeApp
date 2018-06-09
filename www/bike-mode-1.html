@@ -62,91 +62,33 @@
         </div>
         <div class="col-3">
           <div class="row">
-            <div class="card mb-2 col-3 box-shadow">
+            <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
+                  <li>10 users included</li>
                 </ul>
               </div>
             </div>
-            <div class="card mb-2 col-3 box-shadow">
+            <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
+                  <li>10 users included</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="card mb-2 col-3 box-shadow">
+            <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
+                  <li>10 users included</li>
                 </ul>
               </div>
             </div>
-            <div class="card mb-2 col-3 box-shadow">
+            <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card mb-2 col-3 box-shadow">
-              <div class="card-body">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>1</li>
+                  <li>10 users included</li>
                 </ul>
               </div>
             </div>
@@ -198,96 +140,7 @@
       }
 
       var currentlySubscribedTopic = 'pi/#';
-      var messageHistory = '';
-      var clientId = 'mqtt-explorer-' + (Math.floor((Math.random() * 100000) + 1));
 
-      var AWS = require('aws-sdk');
-      var AWSIoTData = require('aws-iot-device-sdk');
-      AWS.config.host = 'a2xzgqat4h4es4.iot.us-east-1.amazonaws.com';
-      AWS.config.region = 'eu-west-1'; // Region
-      AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-          IdentityPoolId: 'eu-west-1:548377b9-c4d7-474a-b6fb-7d5d05780b0e',
-      });
-
-      const mqttClient = AWSIoTData.device({
-         //
-         // Set the AWS region we will operate in.
-         //
-         region: AWS.config.region,
-         host: AWS.config.host,
-         clientId: clientId,
-
-         protocol: 'wss',
-
-         maximumReconnectTimeMs: 8000,
-
-         debug: true,
-
-         accessKeyId: '',
-         secretKey: '',
-         sessionToken: ''
-      });
-      //
-      // var cognitoIdentity = new AWS.CognitoIdentity();
-      // AWS.config.credentials.get(function(err, data) {
-      //    if (!err) {
-      //       console.log('retrieved identity: ' + AWS.config.credentials.identityId);
-      //       var params = {
-      //          IdentityId: AWS.config.credentials.identityId
-      //       };
-      //       cognitoIdentity.getCredentialsForIdentity(params, function(err, data) {
-      //          if (!err) {
-      //             //
-      //             // Update our latest AWS credentials; the MQTT client will use these
-      //             // during its next reconnect attempt.
-      //             //
-      //             mqttClient.updateWebSocketCredentials(data.Credentials.AccessKeyId,
-      //                data.Credentials.SecretKey,
-      //                data.Credentials.SessionToken);
-      //          } else {
-      //             console.log('error retrieving credentials: ' + err);
-      //             alert('error retrieving credentials: ' + err);
-      //          }
-      //       });
-      //    } else {
-      //       console.log('error retrieving identity:' + err);
-      //       alert('error retrieving identity: ' + err);
-      //    }
-      // });
-      //
-      // //
-      // // Connect handler; update div visibility and fetch latest shadow documents.
-      // // Subscribe to lifecycle events on the first connect event.
-      // //
-      // window.mqttClientConnectHandler = function() {
-      //    alert('connect');
-      //    // document.getElementById("connecting-div").style.visibility = 'hidden';
-      //    // document.getElementById("explorer-div").style.visibility = 'visible';
-      //    // document.getElementById('subscribe-div').innerHTML = '<p><br></p>';
-      //    messageHistory = '';
-      //
-      //    //
-      //    // Subscribe to our current topic.
-      //    //
-      //    mqttClient.subscribe(currentlySubscribedTopic);
-      // };
-      //
-      // window.mqttClientReconnectHandler = function() {
-      //    alert('reconnect');
-      //
-      // window.isUndefined = function(value) {
-      //    return typeof value === 'undefined' || typeof value === null;
-      // };
-      //
-      // window.mqttClientMessageHandler = function(topic, payload) {
-      //    console.log('message: ' + topic + ':' + payload.toString());
-      //    messageHistory = messageHistory + topic + ':' + payload.toString() + '</br>';
-      //    // document.getElementById('subscribe-div').innerHTML = '<p>' + messageHistory + '</p>';
-      // };
-      //
-      // mqttClient.on('connect', window.mqttClientConnectHandler);
-      // mqttClient.on('reconnect', window.mqttClientReconnectHandler);
-      // mqttClient.on('message', window.mqttClientMessageHandler);
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5aZ-KM67zM44jlZm4ERX67hYH89ul5Rs&callback=initMap"></script>
 </body>
