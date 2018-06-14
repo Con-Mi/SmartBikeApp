@@ -7,4 +7,14 @@ ___
 This SmartBikeApp won the competition due to its simplicity, functionality and user friendly deisgn. Below you can see
 screenshots of the app.
 ___
-Pictures
+Pictures:
+![alt text](https://github.com/Con-Mi/SmartBikeApp/blob/master/Pictures/35299478_10216190286775338_4629072539962834944_n.jpg)
+
+![alt text](https://github.com/Con-Mi/SmartBikeApp/blob/master/Pictures/35279880_10216190287095346_1146212946079121408_n.jpg)
+
+![alt text](https://github.com/Con-Mi/SmartBikeApp/blob/master/Pictures/35265994_10216190287575358_870364170367795200_n.jpg)
+
+![alt text](https://github.com/Con-Mi/SmartBikeApp/blob/master/Pictures/35294733_10216190287855365_7063582568817360896_n.jpg)
+
+![alt text](https://github.com/Con-Mi/SmartBikeApp/blob/master/Pictures/35225698_10216190288055370_514227986149408768_n.jpg)
+
