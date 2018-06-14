@@ -7,6 +7,14 @@ module.exports = [
         "clobbers": [
             "AndroidToast"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-fingerprint-aio/www/Fingerprint.js",
+        "id": "cordova-plugin-fingerprint-aio.Fingerprint",
+        "pluginId": "cordova-plugin-fingerprint-aio",
+        "clobbers": [
+            "Fingerprint"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -14,7 +22,8 @@ module.exports.metadata =
 {
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-geolocation": "4.0.1",
-    "cordova-android-toast": "1.0.0"
+    "cordova-android-toast": "1.0.0",
+    "cordova-plugin-fingerprint-aio": "1.3.7"
 }
 // BOTTOM OF METADATA
 });

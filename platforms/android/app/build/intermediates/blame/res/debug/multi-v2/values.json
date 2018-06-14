@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\home\\kourtinesble\\SmartBikeApp\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "/home/kourtinesble/SMartBike/SmartBikeApp/C:\\home\\kourtinesble\\SmartBikeApp\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\home\\kourtinesble\\SmartBikeApp\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "/home/kourtinesble/SMartBike/SmartBikeApp/C:\\home\\kourtinesble\\SmartBikeApp\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",
@@ -23,10 +23,62 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\tirth\\Documents\\Cybercom\\SmartBikeApp\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "/home/kourtinesble/SMartBike/SmartBikeApp/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tirth\\Documents\\Cybercom\\SmartBikeApp\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "/home/kourtinesble/SMartBike/SmartBikeApp/platforms/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "5,6,15",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "198,262,866",
+                        "endColumns": "63,49,58",
+                        "endOffsets": "257,307,920"
+                    }
+                },
+                {
+                    "source": "/home/kourtinesble/SMartBike/SmartBikeApp/platforms/android/app/src/main/res/values/fpauth-colors.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1",
+                        "startColumns": "-1,-1,-1",
+                        "startOffsets": "-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,102,150",
+                        "endColumns": "46,47,47",
+                        "endOffsets": "97,145,193"
+                    }
+                },
+                {
+                    "source": "/home/kourtinesble/SMartBike/SmartBikeApp/platforms/android/app/src/main/res/values/fpauth-strings.xml",
+                    "from": {
+                        "startLines": "-1,17,-1,-1,-1,20,-1,18,-1,-1",
+                        "startColumns": "-1,4,-1,-1,-1,4,-1,4,-1,-1",
+                        "startOffsets": "-1,691,-1,-1,-1,892,-1,745,-1,-1",
+                        "endColumns": "-1,53,-1,-1,-1,45,-1,61,-1,-1",
+                        "endOffsets": "-1,740,-1,-1,-1,933,-1,802,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10,11,12,13,14,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "312,397,451,535,593,687,733,804,925,1064",
+                        "endColumns": "84,53,83,57,93,45,70,61,138,84",
+                        "endOffsets": "392,446,530,588,682,728,799,861,1059,1144"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/kourtinesble/SMartBike/SmartBikeApp/C:\\Users\\tirth\\Documents\\Cybercom\\SmartBikeApp\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "/home/kourtinesble/SMartBike/SmartBikeApp/C:\\Users\\tirth\\Documents\\Cybercom\\SmartBikeApp\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",

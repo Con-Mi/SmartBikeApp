@@ -7,6 +7,9 @@
     <feature name="Geolocation">
         <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
     </feature>
+    <feature name="Fingerprint">
+        <param name="android-package" value="de.niklasmerz.cordova.fingerprint.Fingerprint" />
+    </feature>
     <feature name="AndroidToast">
         <param name="android-package" value="com.nikolabreznjak.AndroidToast" />
     </feature>

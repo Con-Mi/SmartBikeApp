@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/kourtinesble/SMartBike/SmartBikeApp/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml",
+            "map": [
+                {
+                    "source": "/home/kourtinesble/SMartBike/SmartBikeApp/platforms/android/app/src/main/res/values-es/fpauth-strings.xml",
+                    "from": {
+                        "startLines": "-1,17,-1,-1,-1,20,-1,18,-1,-1",
+                        "startColumns": "-1,4,-1,-1,-1,4,-1,4,-1,-1",
+                        "startOffsets": "-1,691,-1,-1,-1,903,-1,747,-1,-1",
+                        "endColumns": "-1,55,-1,-1,-1,53,-1,62,-1,-1",
+                        "endOffsets": "-1,742,-1,-1,-1,952,-1,805,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,148,204,299,358,467,521,599,662,823",
+                        "endColumns": "92,55,94,58,108,53,77,62,160,93",
+                        "endOffsets": "143,199,294,353,462,516,594,657,818,912"
+                    }
+                }
+            ]
+        }
+    ]
+}

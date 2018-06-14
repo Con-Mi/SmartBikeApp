@@ -27,14 +27,14 @@
             <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
+                  <li>9.546 km left</li>
                 </ul>
               </div>
             </div>
             <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
+                  <li>10 kmph</li>
                 </ul>
               </div>
             </div>
@@ -43,14 +43,14 @@
             <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
+                  <li>Weather now: 20 &deg:C</li>
                 </ul>
               </div>
             </div>
             <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
+                  <li>0.37 km</li>
                 </ul>
               </div>
             </div>
@@ -65,14 +65,14 @@
             <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
+                  <li>Cloudy</li>
                 </ul>
               </div>
             </div>
             <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
+                  <li>47% Battery</li>
                 </ul>
               </div>
             </div>
@@ -81,14 +81,14 @@
             <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
+                  <li>Light Traffic in your area</li>
                 </ul>
               </div>
             </div>
             <div class="card mb-2 col-6 box-shadow">
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
+                  <li><a href="bike-mode-0.html"> Go to navigation mode </a> </li>
                 </ul>
               </div>
             </div>
@@ -110,6 +110,7 @@
       var androidToast;
 
       function onDeviceReady() {
+
         androidToast = new AndroidToast();
       }
 
@@ -127,8 +128,8 @@
 
       function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         directionsService.route({
-          origin: "chicago, il",
-          destination: "st louis, mo",
+          origin: {"lat":57.7075, "lng":11.93851},
+          destination: "Chalmers, Gothenburg",
           travelMode: 'BICYCLING'
         }, function(response, status) {
           if (status === 'OK') {

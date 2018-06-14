@@ -28,9 +28,40 @@
     </div>
   </div>
 
+  <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/mdb.min.js"></script>
+   <script>
+      document.addEventListener("deviceready", onDeviceReady, false);
+      var androidToast;
+
+      function onDeviceReady() {
+        alert(2)
+        FingerprintAuth.isAvailable(isAvailableSuccess, isAvailableError);
+        alert(1)
+        androidToast = new AndroidToast();
+
+      }
+      /**
+ * @return {
+ *      isAvailable:boolean,
+ *      isHardwareDetected:boolean,
+ *      hasEnrolledFingerprints:boolean
+ *   }
+ */
+    function isAvailableSuccess(result) {
+      androidToast.show("FingerprintAuth available: " + JSON.stringify(result));
+        if (result.isAvailable) {
+          var encryptConfig = {}; // See config object for required parameters
+          FingerprintAuth.encrypt(encryptConfig, encryptSuccessCallback, encryptErrorCallback);
+      }
+
+  function isAvailableError(message) {
+      androidToast.show("isAvailableError(): " + message);
+  }
+
+      </script>
 </body>
 </html>
