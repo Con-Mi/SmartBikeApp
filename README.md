@@ -3,8 +3,12 @@ ___
 This app was created as part of a hackathon competition organized by [Cybercom Group](https://www.linkedin.com/company/cybercom/), [Amazon Web Services](https://www.linkedin.com/company/amazon-web-services/) and [Cycleurope](https://www.linkedin.com/company/cycleurope-sverige/).
 The Smart Bike app purposes are to unlock your bike with your phones fingerprint, to add where you want to go, and a navigation 
 tool will help you and give you directions towards your destination.
+
+Link to the competition [here](https://www.cybercom.com/innovation-zone/blogs-innovation-zone/innovation-zone-blog/hack-a-bike-goteborg/).
+Link to the presentation [here](https://www.youtube.com/watch?v=jj_Fgeq86rg).
 ___
-This SmartBikeApp won the competition due to its simplicity, functionality and user friendly deisgn. Below you can see
+This SmartBikeApp won the competition due to its simplicity, functionality and user friendly deisgn. The prize was a limited edition Crescent Bike that is not available in markets and valued at 20000sek. 
+Below you can see
 screenshots of the app.
 ___
 Pictures:
