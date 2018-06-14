@@ -1,6 +1,6 @@
 # SmartBikeApp
 ___
-This app was created as part of a hackathon competition organized by Cybercom, AWS and Cycleurope.
+This app was created as part of a hackathon competition organized by [Cybercom Group](https://www.linkedin.com/company/cybercom/), [Amazon Web Services](https://www.linkedin.com/company/amazon-web-services/) and [Cycleurope](https://www.linkedin.com/company/cycleurope-sverige/).
 The Smart Bike app purposes are to unlock your bike with your phones fingerprint, to add where you want to go, and a navigation 
 tool will help you and give you directions towards your destination.
 ___
